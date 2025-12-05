@@ -1,4 +1,5 @@
 // src/components/ResultBox.jsx
+import "../styles/ResultBox.css";
 
 function ResultBox({ result }) {
   if (!result) {
@@ -12,8 +13,16 @@ function ResultBox({ result }) {
   return (
     <div className="result-box">
       <h2>오늘의 점심 메뉴</h2>
+
+      {/* 메뉴 이미지 추가 */}
+      {result.image && (
+        <img src={result.image} alt={result.name} className="menu-image" />
+      )}
+
       <h3>{result.name}</h3>
+
       {result.description && <p>{result.description}</p>}
+
       <p className="tags">
         <span>나라: {result.nation}</span>{" "}
         <span>재료: {result.ingredient}</span>
