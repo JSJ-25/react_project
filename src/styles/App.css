@@ -1,38 +1,21 @@
 /* ================================
-   전체 색상 팔레트
+   색상 변수
 ================================ */
 :root {
-  --bg-main: #f0fff7; /* 전체 배경 – 아주 옅은 민트 */
-  --card-bg: #ffffff; /* 카드 배경 – 흰색 */
-  --accent: #8be3a8; /* 기본 연두 버튼 */
-  --accent-strong: #34c36b; /* 버튼 hover */
-  --accent-soft: #e1ffe9; /* 연한 연두 */
-  --accent-yellow: #fff9cc; /* 결과 박스 배경 */
+  --bg-main: #f0fff7;
+  --card-bg: #ffffff;
+  --accent: #8be3a8;
+  --accent-strong: #34c36b;
+  --accent-soft: #e1ffe9;
+  --accent-yellow: #fff9cc;
   --border-soft: #d4f5df;
-  --text-main: #1f2933; /* 기본 글자색 (짙은 회색) */
-  --text-sub: #6b7280; /* 서브 텍스트 */
+  --text-main: #1f2933;
+  --text-sub: #6b7280;
 }
 
 /* ================================
-   전체 화면 가운데 정렬 (중요!)
+   기본 폰트 / 배경
 ================================ */
-#root {
-  min-height: 100vh;
-  width: 100%; /* 이 줄이 중요! 화면 전체 너비 사용 */
-  display: flex;
-  justify-content: center; /* 가로 가운데 정렬 */
-  align-items: flex-start; /* 세로는 위쪽에서 시작 */
-  padding-top: 40px;
-  background: var(--bg-main);
-}
-
-/* ================================
-   기본 설정
-================================ */
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -41,31 +24,106 @@ body {
 }
 
 /* ================================
-   카드(App) 스타일
+   전체 화면 가운데 정렬
+================================ */
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: var(--bg-main);
+}
+
+/* ================================
+   전체 카드(App)
 ================================ */
 .app {
-  max-width: 640px;
-  width: 100%;
-  padding: 28px 24px 32px;
+  max-width: 1500px;
+  width: 75%;
+  display: flex; /* 2컬럼 구조 */
+  flex-direction: row;
+  gap: 40px; /* 좌우 간격 */
+  padding: 30px 40px;
+
   background: var(--card-bg);
-  border-radius: 18px;
+  border-radius: 20px;
   border: 1px solid var(--border-soft);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
 }
 
 /* ================================
-   제목
+   왼쪽 영역 (제목 + 버튼들)
 ================================ */
-h1 {
-  text-align: center;
-  margin: 0 0 20px;
-  font-size: 26px;
+.left-panel {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px; /* 오른쪽 컨텐츠와 세로 위치 맞추기 */
+}
+
+/* 메인/서브 버튼 묶음 간격 */
+.mode-buttons,
+.sub-buttons {
+  display: flex;
+  flex-direction: column; /* 🔥 세로 정렬 */
+  gap: 10px; /* 🔥 버튼끼리 여유 간격 */
+}
+
+/* 제목 */
+.title-left {
+  font-size: 50px;
   font-weight: 700;
-  color: #14532d;
+  margin-bottom: 18px;
+  color: orange;
+}
+
+/* 상단 버튼 세로 정렬 (나라별/재료별/완전랜덤) */
+.top-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 하단 버튼 (다시 추천 / 처음으로) */
+.side-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.side-actions button {
+  width: 120px;
 }
 
 /* ================================
-   버튼 공통
+   오른쪽 메인 콘텐츠 영역
+================================ */
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px; /* 결과 박스 위 여백 */
+}
+
+/* 상태 텍스트 (현재 모드 / 세부 선택) */
+.status {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-top: 6px;
+  opacity: 0.7;
+}
+
+/* ================================
+   버튼 공통 스타일
 ================================ */
 button {
   padding: 10px 18px;
@@ -79,11 +137,27 @@ button {
   transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
 }
 
-button:hover {
+button:not(:disabled):hover {
   background: var(--accent-strong);
-  color: #f9fafb;
+  color: #ffffff;
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(52, 195, 107, 0.35);
+}
+
+/* 비활성화 버튼 공통 스타일 */
+button:disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  border-color: #e5e7eb;
+  cursor: default;
+  box-shadow: none;
+}
+
+/* 비활성화 버튼은 hover 시에도 변화 없음 */
+button:disabled:hover {
+  background: #e5e7eb;
+  color: #9ca3af;
+  transform: none;
 }
 
 button:active {
@@ -91,97 +165,119 @@ button:active {
   box-shadow: none;
 }
 
-/* 버튼 묶음 정렬 */
-.mode-buttons,
-.sub-buttons,
-.actions {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 14px 0;
-  flex-wrap: wrap;
-}
-
 /* ================================
-   상태 텍스트
+   메인 모드 버튼 스타일 (나라/재료/랜덤)
 ================================ */
-.status {
-  font-size: 13px;
-  color: var(--text-sub);
-  margin-top: 6px;
-  line-height: 1.5;
-}
-
-/* ================================
-   결과 박스
-================================ */
-.result-box {
-  margin-top: 18px;
-  padding: 18px 16px;
-  border-radius: 14px;
-  background: var(--accent-yellow);
-  border: 1px solid #f4e6a3;
-  color: #374151;
-}
-
-.result-box.empty {
-  background: var(--accent-soft);
-  border-color: var(--border-soft);
-  color: var(--text-sub);
-}
-
-.result-box h2 {
-  margin: 0 0 8px;
-  font-size: 18px;
-  color: #166534;
-}
-
-.result-box h3 {
-  margin: 4px 0 6px;
-  font-size: 20px;
-}
-
-/* 태그 스타일 */
-.tags {
-  margin-top: 8px;
-}
-
-.tags span {
-  display: inline-block;
-  font-size: 11px;
-  margin-right: 6px;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: #ecfdf3;
-  border: 1px solid #bbf7d0;
-  color: #166534;
-}
-
-/* ================================
-   결과 이미지 스타일
-================================ */
-.result-image-wrapper {
-  margin: 8px 0 12px;
-  border-radius: 12px;
-  overflow: hidden;
-  max-height: 220px;
-}
-
-.result-image {
+.btn-main {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-}
-
-/* ================================
-   하단 버튼
-================================ */
-.actions button:nth-child(2) {
   background: #ffffff;
   color: var(--text-main);
+  border-color: var(--border-soft);
 }
 
-.actions button:nth-child(2):hover {
-  background: #f3f4f6;
+.btn-main.active {
+  background: var(--accent);
+  color: #064e3b;
+  border-color: var(--accent-strong);
+  box-shadow: 0 0 0 2px rgba(52, 195, 107, 0.2);
+}
+
+/* ================================
+   서브 카테고리 버튼 (한식/중식/밥/면 등)
+================================ */
+.btn-sub {
+  width: 100%;
+  background: #f9fafb;
+  color: var(--text-main);
+  border-color: #e5e7eb;
+  font-size: 13px;
+}
+
+.btn-sub.active {
+  background: #dcfce7;
+  border-color: #22c55e;
+  color: #166534;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+/* ================================
+   왼쪽 아래 다시 추천 / 처음으로 – 비활성 스타일
+================================ */
+.side-actions button:disabled {
+  background: #e5e7eb;
+  border-color: #d1d5db;
+  color: #9ca3af;
+  cursor: default;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ================================
+   반응형 1단계 : 노트북/작은 화면
+================================ */
+@media (max-width: 1024px) {
+  .app {
+    width: 90%; /* 75% → 90% 로 카드 조금 넓게 */
+    gap: 30px; /* 좌우 여백도 약간 줄이기 */
+    padding: 24px 28px;
+  }
+
+  .title-left {
+    font-size: 42px; /* 제목도 살짝 줄여서 균형 맞추기 */
+  }
+}
+
+/* ================================
+   반응형 2단계 : 태블릿/세로 화면
+================================ */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column; /* 🔥 좌우 → 위/아래 */
+    align-items: center;
+    width: 95%;
+    padding: 24px 18px;
+  }
+
+  .left-panel {
+    width: 100%;
+    align-items: center; /* 왼쪽 정렬 → 가운데 정렬 */
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .title-left {
+    font-size: 38px;
+    margin-bottom: 14px;
+  }
+
+  .top-buttons {
+    flex-direction: row; /* 🔥 메인 3버튼은 가로로 */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 14px;
+  }
+
+  .sub-buttons {
+    flex-direction: row; /* 서브 버튼도 가로/줄바꿈 */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
+  }
+
+  .side-actions {
+    justify-content: center; /* 다시 추천 / 처음으로 가운데 정렬 */
+    margin-top: 16px;
+  }
+
+  .content-area {
+    width: 100%;
+    padding-top: 18px;
+  }
+
+  .result-box,
+  .result-box.empty {
+    width: 100%;
+    max-width: 580px;
+    height: 480px;
+  }
 }
