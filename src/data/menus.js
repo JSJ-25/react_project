@@ -6,7 +6,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "따끈한 국물이 땡길 때 좋은 김치찌개",
-    image: "/src/assets/menus/kimchi-jjigae.jpg",
+    image: "/menus/kimchi-jjigae.jpg",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "달짝지근한 불고기가 올라간 덮밥",
-    image: "/src/assets/menus/bulgogi-bowl.jpg",
+    image: "/menus/bulgogi-bowl.jpg",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "tteok",
     description: "매콤달콤 국민 간식 겸 점심 메뉴",
-    image: "/src/assets/menus/tteokbokki.jpg",
+    image: "/menus/tteokbokki.jpg",
   },
   {
     id: 12,
@@ -30,7 +30,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "구수한 맛이 살짝 중독되는 된장찌개",
-    image: "/src/assets/menus/doenjang-jjigae.jpg",
+    image: "/menus/doenjang-jjigae.jpg",
   },
   {
     id: 13,
@@ -38,7 +38,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "부드러운 순두부와 칼칼한 국물 조화",
-    image: "/src/assets/menus/sundubu-jjigae.jpg",
+    image: "/menus/sundubu-jjigae.jpg",
   },
   {
     id: 14,
@@ -46,7 +46,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "매콤달콤한 양념으로 볶은 제육볶음",
-    image: "/src/assets/menus/jeyuk-bokkeum.jpg",
+    image: "/menus/jeyuk-bokkeum.jpg",
   },
   {
     id: 15,
@@ -54,7 +54,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "다양한 채소와 고추장을 비벼 먹는 영양식",
-    image: "/src/assets/menus/bibimbap.jpg",
+    image: "/menus/bibimbap.jpg",
   },
   {
     id: 16,
@@ -62,7 +62,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "noodle",
     description: "따끈하고 담백한 국물의 칼국수",
-    image: "/src/assets/menus/kalguksu.jpg",
+    image: "/menus/kalguksu.jpg",
   },
   {
     id: 17,
@@ -70,7 +70,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "가볍게 먹기 좋은 국민 간편식 김밥",
-    image: "/src/assets/menus/gimbap.jpg",
+    image: "/menus/gimbap.jpg",
   },
   {
     id: 18,
@@ -78,7 +78,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "bread",
     description: "겉은 바삭, 속은 촉촉한 왕돈까스",
-    image: "/src/assets/menus/donkatsu-kor.jpg",
+    image: "/menus/donkatsu-kor.jpg",
   },
   {
     id: 19,
@@ -86,7 +86,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "noodle",
     description: "시원한 국물과 쫄깃한 면발의 조화",
-    image: "/src/assets/menus/naengmyeon.jpg",
+    image: "/menus/naengmyeon.jpg",
   },
   {
     id: 20,
@@ -94,7 +94,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "햄·소시지·라면사리가 들어간 푸짐한 찌개",
-    image: "/src/assets/menus/budae-jjigae.jpg",
+    image: "/menus/budae-jjigae.jpg",
   },
   {
     id: 21,
@@ -102,7 +102,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "계란이 폭 덮인 부드러운 오므라이스",
-    image: "/src/assets/menus/omurice.jpg",
+    image: "/menus/omurice.jpg",
   },
   {
     id: 22,
@@ -110,7 +110,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "rice",
     description: "간단하지만 중독되는 비빔밥 스타일",
-    image: "/src/assets/menus/soy-egg-rice.jpg",
+    image: "/menus/soy-egg-rice.jpg",
   },
   {
     id: 23,
@@ -118,7 +118,7 @@ export const MENUS = [
     nation: "korean",
     ingredient: "noodle",
     description: "고소한 멸치 육수의 따뜻한 잔치국수",
-    image: "/src/assets/menus/janchi-guksu.jpg",
+    image: "/menus/janchi-guksu.jpg",
   },
 
   // ---------------------- 중식 (15개) ----------------------
@@ -128,7 +128,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "noodle",
     description: "달콤한 춘장 소스의 대표 중식 면 요리",
-    image: "/src/assets/menus/jajangmyeon.jpg",
+    image: "/menus/jajangmyeon.jpg",
   },
   {
     id: 5,
@@ -136,7 +136,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "noodle",
     description: "얼큰한 국물이 포인트인 해물 짬뽕",
-    image: "/src/assets/menus/jjamppong.jpg",
+    image: "/menus/jjamppong.jpg",
   },
   {
     id: 6,
@@ -144,7 +144,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "rice",
     description: "짜릿한 마라맛이 느껴지는 마파두부 덮밥",
-    image: "/src/assets/menus/mapo-tofu-rice.jpg",
+    image: "/menus/mapo-tofu-rice.jpg",
   },
   {
     id: 24,
@@ -152,7 +152,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "bread",
     description: "겉은 바삭하고 속은 촉촉한 탕수육",
-    image: "/src/assets/menus/tangsuyuk.jpg",
+    image: "/menus/tangsuyuk.jpg",
   },
   {
     id: 25,
@@ -160,7 +160,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "bread",
     description: "노릇하게 구워낸 바삭만두",
-    image: "/src/assets/menus/gun-mandu.jpg",
+    image: "/menus/gun-mandu.jpg",
   },
   {
     id: 26,
@@ -168,7 +168,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "rice",
     description: "고슬고슬 볶아낸 중국식 볶음밥",
-    image: "/src/assets/menus/bokkeumbap.jpg",
+    image: "/menus/bokkeumbap.jpg",
   },
   {
     id: 27,
@@ -176,7 +176,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "noodle",
     description: "진한 소고기 육수의 대만식 국수",
-    image: "/src/assets/menus/beef-noodle-cn.jpg",
+    image: "/menus/beef-noodle-cn.jpg",
   },
   {
     id: 28,
@@ -184,7 +184,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "noodle",
     description: "중독성 강한 얼얼한 마라 국물 요리",
-    image: "/src/assets/menus/malatang.jpg",
+    image: "/menus/malatang.jpg",
   },
   {
     id: 29,
@@ -192,7 +192,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "rice",
     description: "각종 재료를 매콤하게 볶아낸 마라샹궈",
-    image: "/src/assets/menus/malaxiangguo.jpg",
+    image: "/menus/malaxiangguo.jpg",
   },
   {
     id: 30,
@@ -200,7 +200,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "rice",
     description: "짜장과 밥의 환상적인 조합",
-    image: "/src/assets/menus/jajangbap.jpg",
+    image: "/menus/jajangbap.jpg",
   },
   {
     id: 31,
@@ -208,7 +208,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "bread",
     description: "새콤달콤한 칠리 소스의 새우 요리",
-    image: "/src/assets/menus/chili-shrimp.jpg",
+    image: "/menus/chili-shrimp.jpg",
   },
   {
     id: 32,
@@ -216,7 +216,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "bread",
     description: "향신료 향이 매력적인 중국식 꼬치",
-    image: "/src/assets/menus/lamb-skewer.jpg",
+    image: "/menus/lamb-skewer.jpg",
   },
   {
     id: 33,
@@ -224,7 +224,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "rice",
     description: "부드러운 계란과 토마토의 조화",
-    image: "/src/assets/menus/egg-tomato-stirfry.jpg",
+    image: "/menus/egg-tomato-stirfry.jpg",
   },
   {
     id: 34,
@@ -232,7 +232,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "bread",
     description: "매콤달콤한 마늘향 치킨 요리",
-    image: "/src/assets/menus/kanpunggi.jpg",
+    image: "/menus/kanpunggi.jpg",
   },
   {
     id: 35,
@@ -240,7 +240,7 @@ export const MENUS = [
     nation: "chinese",
     ingredient: "bread",
     description: "얇게 썬 고기와 채소를 볶아낸 인기 메뉴",
-    image: "/src/assets/menus/pepper-japchae.jpg",
+    image: "/menus/pepper-japchae.jpg",
   },
 
   // ---------------------- 일식 (15개) ----------------------
@@ -250,7 +250,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "rice",
     description: "달큰한 소스로 졸인 소고기 덮밥",
-    image: "/src/assets/menus/gyudon.jpg",
+    image: "/menus/gyudon.jpg",
   },
   {
     id: 8,
@@ -258,7 +258,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "noodle",
     description: "진한 육수가 특징인 일식 라멘",
-    image: "/src/assets/menus/ramen.jpg",
+    image: "/menus/ramen.jpg",
   },
   {
     id: 36,
@@ -266,7 +266,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "rice",
     description: "돈까스와 달걀 조합의 덮밥",
-    image: "/src/assets/menus/katsudon.jpg",
+    image: "/menus/katsudon.jpg",
   },
   {
     id: 37,
@@ -274,7 +274,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "rice",
     description: "부드러운 일본식 카레가 듬뿍",
-    image: "/src/assets/menus/curry-rice-jp.jpg",
+    image: "/menus/curry-rice-jp.jpg",
   },
   {
     id: 38,
@@ -282,7 +282,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "noodle",
     description: "따뜻하고 담백한 국물의 우동",
-    image: "/src/assets/menus/udon.jpg",
+    image: "/menus/udon.jpg",
   },
   {
     id: 39,
@@ -290,7 +290,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "rice",
     description: "다양한 초밥을 간단히 즐기는 세트 메뉴",
-    image: "/src/assets/menus/sushi-set.jpg",
+    image: "/menus/sushi-set.jpg",
   },
   {
     id: 40,
@@ -298,7 +298,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "noodle",
     description: "튀김과 우동의 조화로운 조합",
-    image: "/src/assets/menus/tempura-udon.jpg",
+    image: "/menus/tempura-udon.jpg",
   },
   {
     id: 41,
@@ -306,7 +306,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "noodle",
     description: "고소한 소스 맛의 볶음면",
-    image: "/src/assets/menus/yakisoba.jpg",
+    image: "/menus/yakisoba.jpg",
   },
   {
     id: 42,
@@ -314,7 +314,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "rice",
     description: "신선한 연어를 올린 인기 덮밥",
-    image: "/src/assets/menus/salmon-don.jpg",
+    image: "/menus/salmon-don.jpg",
   },
   {
     id: 43,
@@ -322,7 +322,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "rice",
     description: "바삭한 새우튀김 스타일 덮밥",
-    image: "/src/assets/menus/tendon.jpg",
+    image: "/menus/tendon.jpg",
   },
   {
     id: 44,
@@ -330,7 +330,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "bread",
     description: "직접 구워 먹는 일본식 고기",
-    image: "/src/assets/menus/yakiniku.jpg",
+    image: "/menus/yakiniku.jpg",
   },
   {
     id: 45,
@@ -338,7 +338,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "bread",
     description: "겉은 바삭하고 속은 부드러운 오사카식 타코야끼",
-    image: "/src/assets/menus/takoyaki.jpg",
+    image: "/menus/takoyaki.jpg",
   },
   {
     id: 46,
@@ -346,7 +346,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "bread",
     description: "양배추·해산물·고기 등을 부쳐 만든 일본식 철판 요리",
-    image: "/src/assets/menus/okonomiyaki.jpg",
+    image: "/menus/okonomiyaki.jpg",
   },
   {
     id: 47,
@@ -354,7 +354,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "rice",
     description: "신선한 해산물을 밥 위에 올린 일본식 해물덮밥",
-    image: "/src/assets/menus/kaisendon.jpg",
+    image: "/menus/kaisendon.jpg",
   },
   {
     id: 48,
@@ -362,7 +362,7 @@ export const MENUS = [
     nation: "japanese",
     ingredient: "rice",
     description: "닭고기와 달걀의 조화를 느끼는 덮밥",
-    image: "/src/assets/menus/oyakodon.jpg",
+    image: "/menus/oyakodon.jpg",
   },
 
   // ---------------------- 양식 (15개) ----------------------
@@ -372,7 +372,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "noodle",
     description: "크림/토마토/오일 소스로 즐기는 파스타",
-    image: "/src/assets/menus/pasta.jpg",
+    image: "/menus/pasta.jpg",
   },
   {
     id: 10,
@@ -380,7 +380,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "가볍게 먹기 좋은 샌드위치",
-    image: "/src/assets/menus/sandwich.jpg",
+    image: "/menus/sandwich.jpg",
   },
   {
     id: 11,
@@ -388,7 +388,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "감자튀김과 함께 나오는 버거 세트",
-    image: "/src/assets/menus/burger-set.jpg",
+    image: "/menus/burger-set.jpg",
   },
   {
     id: 49,
@@ -396,7 +396,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "육즙 가득한 두툼한 스테이크",
-    image: "/src/assets/menus/steak.jpg",
+    image: "/menus/steak.jpg",
   },
   {
     id: 50,
@@ -404,7 +404,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "치즈 듬뿍 오븐 요리",
-    image: "/src/assets/menus/gratin.jpg",
+    image: "/menus/gratin.jpg",
   },
   {
     id: 51,
@@ -412,7 +412,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "rice",
     description: "부드럽고 고소한 크림 리조또",
-    image: "/src/assets/menus/risotto.jpg",
+    image: "/menus/risotto.jpg",
   },
   {
     id: 52,
@@ -420,7 +420,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "샐러드·빵·에그가 함께 나오는 세트",
-    image: "/src/assets/menus/brunch-set.jpg",
+    image: "/menus/brunch-set.jpg",
   },
   {
     id: 53,
@@ -428,7 +428,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "rice",
     description: "버터 향 가득한 볶음밥 스타일",
-    image: "/src/assets/menus/pilaf.jpg",
+    image: "/menus/pilaf.jpg",
   },
   {
     id: 54,
@@ -436,7 +436,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "가볍지만 든든한 샐러드 메뉴",
-    image: "/src/assets/menus/chicken-salad.jpg",
+    image: "/menus/chicken-salad.jpg",
   },
   {
     id: 55,
@@ -444,7 +444,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "부드럽고 따뜻한 수프 요리",
-    image: "/src/assets/menus/cream-soup.jpg",
+    image: "/menus/cream-soup.jpg",
   },
   {
     id: 56,
@@ -452,7 +452,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "올리브오일에 새우를 조리한 타파스",
-    image: "/src/assets/menus/gambas.jpg",
+    image: "/menus/gambas.jpg",
   },
   {
     id: 57,
@@ -460,7 +460,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "noodle",
     description: "토마토와 크림이 조화된 부드러운 로제 파스타",
-    image: "/src/assets/menus/rose-pasta.jpg",
+    image: "/menus/rose-pasta.jpg",
   },
   {
     id: 58,
@@ -468,7 +468,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "부드럽게 구운 돼지고기 스테이크",
-    image: "/src/assets/menus/pork-chop.jpg",
+    image: "/menus/pork-chop.jpg",
   },
   {
     id: 59,
@@ -476,7 +476,7 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "향신료로 맛을 낸 촉촉한 서양식 미트볼 요리",
-    image: "/src/assets/menus/meatball.jpg",
+    image: "/menus/meatball.jpg",
   },
   {
     id: 60,
@@ -484,6 +484,6 @@ export const MENUS = [
     nation: "western",
     ingredient: "bread",
     description: "간단하고 든든한 아침식사용 토스트 세트",
-    image: "/src/assets/menus/toast-set.jpg",
+    image: "/menus/toast-set.jpg",
   },
 ];
